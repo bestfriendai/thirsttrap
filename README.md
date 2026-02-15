@@ -43,3 +43,27 @@ npx expo start
 ## License
 
 MIT
+
+## API Configuration
+
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```bash
+# Drink/Hydration API (optional - for hydration tracking)
+HYDRATION_API_KEY=your_hydration_api_key
+HYDRATION_API_URL=https://api.thirsttrap.com/v1
+
+# Water Reminder Service
+WATER_API_KEY=your_water_api_key
+```
+
+### RevenueCat Configuration
+
+1. Create an account at [RevenueCat.com](https://revenuecat.com)
+2. Create products in App Store Connect / Google Play Console:
+   - Monthly: $1.99/month - `thirsttrap_monthly`
+   - Annual: $9.99/year - `thirsttrap_annual`
+3. Configure products in RevenueCat dashboard
+4. Add your API key to the purchases service
